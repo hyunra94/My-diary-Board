@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Diary Board</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#">
+        <span class="brand-mark">M</span>
+        <span>
+          <strong>My Diary Board</strong>
+          <small>Notion life archive</small>
+        </span>
+      </a>
+
+      <nav class="nav-list">
+        <a class="nav-item active" href="#"><span>▦</span>Board</a>
+        <a class="nav-item" href="#"><span>◇</span>Moments</a>
+        <a class="nav-item" href="#"><span>⌁</span>Ideas</a>
+        <a class="nav-item" href="#"><span>◷</span>Routine</a>
+        <a class="nav-item" href="#"><span>☆</span>Archive</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">PERSONAL BOARD</p>
+          <h1>일상, 루틴, 아이디어를 한 곳에 모으는 보드</h1>
+        </div>
+        <label class="search">
+          <span>⌕</span>
+          <input type="search" placeholder="검색">
+        </label>
+      </header>
+
+      <section class="stats" aria-label="Board summary">
+        <article>
+          <span>Today</span>
+          <strong>5</strong>
+          <small>새 기록</small>
+        </article>
+        <article>
+          <span>Focus</span>
+          <strong>72%</strong>
+          <small>이번 주 루틴</small>
+        </article>
+        <article>
+          <span>Inbox</span>
+          <strong>12</strong>
+          <small>아이디어</small>
+        </article>
+      </section>
+
+      <section class="board" aria-label="Cards">
+        <article class="card image-card large">
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80" alt="Notebook on desk">
+          <div class="card-body">
+            <span class="tag rose">Daily</span>
+            <h2>오늘의 기록</h2>
+            <p>짧은 생각, 감정, 해야 할 일까지 가볍게 쌓아두는 카드.</p>
+          </div>
+        </article>
+
+        <article class="card note-card">
+          <span class="tag green">Routine</span>
+          <h2>이번 주 루틴</h2>
+          <p>운동, 수면, 공부, 물 마시기처럼 반복되는 습관을 한눈에 봅니다.</p>
+          <div class="progress"><span style="width: 72%"></span></div>
+        </article>
+
+        <article class="card image-card">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Laptop workspace">
+          <div class="card-body">
+            <span class="tag ink">Project</span>
+            <h2>웹앱 만들기</h2>
+          </div>
+        </article>
+
+        <article class="card quote-card">
+          <span class="tag gold">Archive</span>
+          <p>“나중에 다시 보고 싶은 문장과 링크를 잃어버리지 않게.”</p>
+        </article>
+
+        <article class="card image-card tall">
+          <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80" alt="Journal and pen">
+          <div class="card-body">
+            <span class="tag violet">Ideas</span>
+            <h2>아이디어 인박스</h2>
+            <p>아직 정리되지 않은 생각을 먼저 던져두는 곳.</p>
+          </div>
+        </article>
+
+        <article class="card note-card dark">
+          <span class="tag light">Mood</span>
+          <h2>에너지 체크</h2>
+          <strong class="score">84</strong>
+          <p>기분과 컨디션을 숫자, 태그, 색으로 기록합니다.</p>
+        </article>
+
+        <article class="card note-card">
+          <span class="tag blue">Media</span>
+          <h2>콘텐츠 저장소</h2>
+          <p>영상, 글, 음악, 이미지처럼 다시 보고 싶은 자료를 모읍니다.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
